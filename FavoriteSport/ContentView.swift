@@ -15,11 +15,6 @@ struct ContentView: View {
     @State var favoriteSport: Sport = .golf
     @State var favoriteSportSubmitted = false
     
-    func updateFavoriteSport(with sport: Sport) {
-        favoriteSport = sport
-        favoriteSportSubmitted = false
-    }
-    
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -29,55 +24,28 @@ struct ContentView: View {
                     .font(.largeTitle)
                 Spacer()
                 HStack {
-                    Button {
-                        updateFavoriteSport(with: .golf)
-                    } label: {
-                        Text("Golf")
-                    }
-                    .frame(width: 100, height: 100)
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(.green)
-                    
+                    FavoriteSportButtonView(
+                        sport: .golf,
+                        favoriteSport: $favoriteSport,
+                        favoriteSportSubmitted: $favoriteSportSubmitted
                     )
-                    .opacity(favoriteSport == .golf ? 1.0 : 0.6)
-                    
-                    Button {
-                        updateFavoriteSport(with: .football)
-                    } label: {
-                        Text("Football")
-                            .frame(width: 100, height: 100)
-                            .background(
-                                RoundedRectangle(cornerRadius: 15)
-                                    .fill(.green)
-                            )
-                            .opacity(favoriteSport == .football ? 1.0 : 0.6)
-                    }
+                    FavoriteSportButtonView(
+                        sport: .football,
+                        favoriteSport: $favoriteSport,
+                        favoriteSportSubmitted: $favoriteSportSubmitted
+                    )
                 }
                 HStack {
-                    Button {
-                        updateFavoriteSport(with: .soccer)
-                    } label: {
-                        Text("Soccer")
-                    }
-                    .frame(width: 100, height: 100)
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(.green)
+                    FavoriteSportButtonView(
+                        sport: .soccer,
+                        favoriteSport: $favoriteSport,
+                        favoriteSportSubmitted: $favoriteSportSubmitted
                     )
-                    .opacity(favoriteSport == .soccer ? 1.0 : 0.6)
-                    
-                    Button {
-                        updateFavoriteSport(with: .baseball)
-                    } label: {
-                        Text("Baseball")
-                            .frame(width: 100, height: 100)
-                            .background(
-                                RoundedRectangle(cornerRadius: 15)
-                                    .fill(.green)
-                            )
-                            .opacity(favoriteSport == .baseball ? 1.0 : 0.6)
-                    }
+                    FavoriteSportButtonView(
+                        sport: .baseball,
+                        favoriteSport: $favoriteSport,
+                        favoriteSportSubmitted: $favoriteSportSubmitted
+                    )
                 }
                 Spacer()
                 Button {

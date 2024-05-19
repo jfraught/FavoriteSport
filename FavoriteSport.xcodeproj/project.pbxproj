@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9600FDB2BF79CC1004F74BB /* FavoriteSportButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9600FDA2BF79CC1004F74BB /* FavoriteSportButtonView.swift */; };
 		A9CA99D72BF504010059D194 /* FavoriteSportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA99D62BF504010059D194 /* FavoriteSportApp.swift */; };
 		A9CA99D92BF504010059D194 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA99D82BF504010059D194 /* ContentView.swift */; };
 		A9CA99DB2BF504020059D194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CA99DA2BF504020059D194 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9600FDA2BF79CC1004F74BB /* FavoriteSportButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSportButtonView.swift; sourceTree = "<group>"; };
 		A9CA99D32BF504010059D194 /* FavoriteSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CA99D62BF504010059D194 /* FavoriteSportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSportApp.swift; sourceTree = "<group>"; };
 		A9CA99D82BF504010059D194 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				A9CA99D62BF504010059D194 /* FavoriteSportApp.swift */,
+				A9600FDA2BF79CC1004F74BB /* FavoriteSportButtonView.swift */,
 				A9CA99D82BF504010059D194 /* ContentView.swift */,
 				A9CA99DA2BF504020059D194 /* Assets.xcassets */,
 				A9CA99DC2BF504020059D194 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9600FDB2BF79CC1004F74BB /* FavoriteSportButtonView.swift in Sources */,
 				A9CA99D92BF504010059D194 /* ContentView.swift in Sources */,
 				A9CA99D72BF504010059D194 /* FavoriteSportApp.swift in Sources */,
 			);
